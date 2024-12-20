@@ -1,0 +1,116 @@
+<DOCTYPE html>
+    <html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Магазин Боксу</title>
+        <link rel="stylesheet" href="/styles/main.css"> <!-- Підключення стилів -->
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                    <li><a href="#cart" class="button">Кошик (<span id="cart-count">0</span>)</a></li>
+                    <!-- Кількість товарів в кошику -->
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="home">
+            <h1>Ласкаво просимо до магазину Боксу</h1>
+            <p>Ми пропонуємо широкий вибір боксерських товарів для будь-якого рівня майстерності!</p>
+            <a href="#catalog" class="button">Переглянути товари</a>
+            <a href="#about" class="button">Дізнатися більше про нас</a> <!-- Додана кнопка -->
+        </section>
+    
+        <section id="catalog">
+            <h2>Наш каталог</h2>
+            <div class="product-category">
+                <h3>Боксерські рукавички</h3>
+                <ul>
+                    <li>
+                        <img src="https://sportano.ua/img/b52b588476b8def9e5d485faf958f16f/5/9/5907731444927_40-jpg/boksers-ki-rukavichki-manto-ace-chorni-1021326.jpg" alt="Рукавички 1">
+                        <p>Рукавички "MANTO" - 1500 грн</p>
+                        <a href="#" class="button" onclick="addToCart('Рукавички MANTO', 1500, 'https://sportano.ua/img/b52b588476b8def9e5d485faf958f16f/5/9/5907731444927_40-jpg/boksers-ki-rukavichki-manto-ace-chorni-1021326.jpg')">Купити</a>
+                    </li>
+                    <li>
+                        <img src="https://borec.in.ua/5430-large_default/bokserski-rukavici-manto-boxing-gloves-prime-20-black.jpg" alt="Рукавички 2">
+                        <p>Рукавички "MANTO" - 1200 грн</p>
+                        <a href="#" class="button" onclick="addToCart('Рукавички MANTO', 1200, 'https://borec.in.ua/5430-large_default/bokserski-rukavici-manto-boxing-gloves-prime-20-black.jpg')">Купити</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="product-category">
+                <h3>Тренувальне обладнання</h3>
+                <ul>
+                    <li>
+                        <img src="https://cdn.militaria.pl/media/catalog/product/cache/8c2e9d569ab9531815de83c7119afdd2/2/8/2804847_Bandaze-bokserskie-Manto-Glove-4m-Black-glowne.jpg" alt="Обладнання 1">
+                        <p>Бінти боксерські "MANTO" - 500 грн</p>
+                        <a href="#" class="button" onclick="addToCart('Бінти MANTO', 500, 'https://cdn.militaria.pl/media/catalog/product/cache/8c2e9d569ab9531815de83c7119afdd2/2/8/2804847_Bandaze-bokserskie-Manto-Glove-4m-Black-glowne.jpg')">Купити</a>
+                    </li>
+                    <li>
+                        <img src="https://sportano.ua/img/b52b588476b8def9e5d485faf958f16f/1/9/196969454296_20-jpg/krosivki-boksers-ki-nike-machomai-2-se-white-black-wolf-grey-921786.jpg" alt="Обладнання 2">
+                        <p>Боксерки "NIKE" - 3500 грн</p>
+                        <a href="#" class="button" onclick="addToCart('Боксерки NIKE', 3500, 'https://sportano.ua/img/b52b588476b8def9e5d485faf958f16f/1/9/196969454296_20-jpg/krosivki-boksers-ki-nike-machomai-2-se-white-black-wolf-grey-921786.jpg')">Купити</a>
+                    </li>
+                    <li>
+                        <img src="https://images.prom.ua/6024193460_w640_h640_kapa-dlya-boksa.jpg" alt="Капа 1">
+                        <p>Капа "NIKE" - 500 грн</p>
+                        <a href="#" class="button" onclick="addToCart('Капа NIKE', 500, 'https://images.prom.ua/6024193460_w640_h640_kapa-dlya-boksa.jpg')">Купити</a>
+                    </li>
+                    <li>
+                        <img src="https://fightgear.com.ua/image/cache/catalog/easyphoto/2640/f5b3c1bdcb1b3ce02099ecb1fd890ba9-74633106-o-jpg-2-400x400.jpg" alt="Капа 2">
+                        <p>Капа "EVERLAST" - 500 грн</p>
+                        <a href="#" class="button" onclick="addToCart('Капа EVERLAST', 500, 'https://fightgear.com.ua/image/cache/catalog/easyphoto/2640/f5b3c1bdcb1b3ce02099ecb1fd890ba9-74633106-o-jpg-2-400x400.jpg')">Купити</a>
+                    </li>
+                    <li>
+                        <img src="https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/N30309s.jpg?im=Resize,width=750" alt="Капа 3">
+                        <p>Капа "NIKE" - 900 грн</p>
+                        <a href="#" class="button" onclick="addToCart('Капа NIKE', 900, 'https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/N30309s.jpg')">Купити</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#home" class="button">Повернутися на головну</a>
+        </section>
+    
+        <section id="about">
+            <h2>Про нас</h2>
+            <p>Ми - магазин, що спеціалізується на товарах для боксу. Поставляємо продукцію високої якості для спортсменів будь-якого рівня.</p>
+            <a href="#contact" class="button">Зв'язатися з нами</a>
+        </section>
+    
+        <section id="contact">
+            <h2>Контакти</h2>
+            <p>Телефон: +380633723465</p>
+            <p>Email: info@boxingstore.com</p>
+            <form>
+                <label for="message">Залишити повідомлення:</label>
+                <textarea id="message" rows="4" cols="50"></textarea>
+                <button type="submit" class="button">Надіслати</button>
+            </form>
+        </section>
+        
+        <section id="cart">
+            <h2>Кошик</h2>
+            <p>Загальна сума: <span id="cart-total">0 грн</span></p>
+            <p>Товари в кошику:</p>
+            <ul id="cart-items">
+                <!-- Список товарів буде додаватися через JavaScript -->
+            </ul>
+            
+            <button id="checkout-button" class="button">оформити замовлення</button>
+        </section>
+    
+        <footer>
+            <p>&copy; 2024 Магазин Боксу. Усі права захищені.</p>
+        </footer>
+    
+        <script src="/JS/main.js"></script>
+    </body>
+    
+    </html>

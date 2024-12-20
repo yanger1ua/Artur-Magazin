@@ -1,0 +1,360 @@
+/* Загальні стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Стили для заголовка */
+header {
+    background-color: #222;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    color: #f4a261;
+}
+
+/* Стилі для секцій */
+section {
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h1, section h2, section h3 {
+    color: #222;
+}
+
+section p {
+    margin: 10px 0;
+}
+
+/* Стилі для кнопок і посилань */
+a {
+    color: #f4a261;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Стилі для каталогу */
+.product-category {
+    margin: 20px 0;
+}
+
+.product-category ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-category ul li {
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-category ul li img {
+    width: 300px;
+    height: 220px;
+    border-radius: 8px;
+}
+
+.product-category ul li p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Стилі для форми */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form textarea {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+    font-family: 'Arial', sans-serif;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f4a261;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e76f51;
+}
+
+/* Стилі для футера */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#cart-items img{
+    width: 300px;
+    height: 250px;
+}
+
+body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4EsOKf5jca-Sae8ypdkd_2U-IYe-LSykTEw&s');
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    font-family: Arial, sans-serif; /* Optional: Sets the default font for the page */
+}
+
+header, section, footer {
+    background-color: rgba(255, 255, 255, 0.8); /* Adds a semi-transparent white background for readability */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+h1, h2, h3, p {
+    color: #333; /* Ensures the text is readable on the background */
+}
+
+/* Стилізація кошика */
+#cart {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+#cart h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#cart-items li img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+#cart-items .item-details {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+#cart-items .item-details p {
+    margin: 0;
+}
+
+#cart-items .remove-item {
+    color: red;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+#checkout-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#checkout-button:hover {
+    background-color: #218838;
+}
+
+/* Загальні стилі для кнопок */
+.button {
+    background-color: #e5533c; /* Зелений фон */
+    color: white; /* Білий текст */
+    padding: 10px 20px; /* Відступи всередині кнопки */
+    text-align: center; /* Центрування тексту */
+    text-decoration: none; /* Без підкреслення */
+    display: inline-block;
+    font-size: 16px; /* Розмір шрифта */
+    border-radius: 5px; /* Закруглені кути */
+    transition: background-color 0.3s ease; /* Плавна зміна кольору */
+}
+
+/* При наведенні на кнопку */
+.button:hover {
+    background-color: #f4a261; /* Темніший зелений при наведенні */
+}
+
+/* Для кнопки "Оформити замовлення" */
+#checkout-btn {
+    margin-top: 20px; /* Відступ зверху */
+    font-weight: bold; /* Жирний текст */
+    background-color: #FF6347; /* Червоний фон */
+}
+
+#checkout-btn:hover {
+    background-color: #e5533c; /* Темніший червоний при наведенні */
+}
+
+/* Стилі для розділу кошика */
+#cart {
+    padding: 20px;
+    background-color: #f9f9f9; /* Легкий фон */
+    border-radius: 8px; /* Закруглені кути */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь для кращого вигляду */
+    margin-top: 30px;
+    max-width: 800px;
+    margin: 30px auto; /* Центрування по горизонталі */
+}
+
+#cart h2 {
+    text-align: center; /* Центрування заголовка */
+    font-size: 24px;
+    color: #333; /* Темний текст */
+}
+
+#cart p {
+    font-size: 16px;
+    color: #555; /* Текст світліший для меншої акцентованості */
+    margin-bottom: 10px;
+}
+
+#cart-total {
+    font-weight: bold;
+    font-size: 20px;
+    color: #2d9c2d; /* Зелений колір для суми */
+}
+
+/* Стилі для списку товарів в кошику */
+#cart-items {
+    list-style: none; /* Вимикаємо маркери списку */
+    padding: 0;
+    margin: 10px 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#cart-items li img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover; /* Для правильного вирівнювання зображень */
+    margin-right: 15px;
+}
+
+#cart-items li p {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+}
+
+#cart-items li .item-price {
+    font-weight: bold;
+    color: #2d9c2d; /* Зелений для ціни */
+}
+
+/* Стилі для кнопки оформлення замовлення */
+#checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #FF6347; /* Червоний фон */
+    color: white;
+    text-align: center;
+    text-decoration: none; /* Без підкреслення */
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* При наведенні на кнопку */
+#checkout-btn:hover {
+    background-color: #e5533c; /* Темніший червоний при наведенні */
+}
+
+/* Стилі для кнопки, якщо кошик порожній */
+#cart-items.empty {
+    text-align: center;
+    font-style: italic;
+    color: #aaa;
+}
+
+#order-success{
+    display: none;
+}
